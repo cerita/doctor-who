@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**clear fix**/
+.clear:before,
+.clear:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clear:after {
+  clear: both;
+}
+
+/********* ************/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/** Main Styles **/
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #8791b8;
+}
+a:hover {
+  color: #102372;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  position: relative;
+  padding: 15px;
+}
+header .logo,
+header .site-nav {
+  float: left;
+  width: 50%;
+}
+header .site-nav {
+  text-align: right;
+}
+header .site-nav li {
+  display: inline-block;
+  margin: 0 5px;
+}
+header .site-nav a {
+  text-transform: uppercase;
+  display: block;
+  padding: 5px;
+  transition: color .3s ease-in-out;
+  font-weight: 400;
+}
+header .logo {
+  text-align: left;
+  margin: 0;
+}
+header .logo h1 {
+  color: #102372;
+  margin: 0;
+  font-weight: 800;
+}
+
+.welcome {
+  position: relative;
+  padding: 100px 30px 45px 30px;
+  min-height: 500px;
+  background-image: url("http://th05.deviantart.net/fs71/PRE/f/2012/028/6/8/tardis_by_jeremiachgottwald-d4nvol9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome h1, .welcome h2 {
+  color: whitesmoke;
+}
+.welcome h1 {
+  font-size: 4em;
+  margin: 0;
+}
+.welcome h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.content {
+  font-size: 1em;
+  font-weight: 400;
+}
+.content h1 {
+  font-size: 2.2em;
+  font-weight: 800;
+}
+.content h2 {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+.content a {
+  transition: color .1s ease-in-out;
+}
+.content a:hover {
+  color: #102372;
+}
+.content .main {
+  float: left;
+  width: 55%;
+}
+.content .sidebar {
+  float: right;
+  width: 40%;
+}
+.content .sidebar .info {
+  background-color: #e7e9f1;
+  padding: 15px;
+  border-radius: 5%;
+  box-shadow: 0 5px 5px silver;
+  margin: 15px 0;
+}
+.content .sidebar li {
+  list-style: none;
+}
+.content .formbox {
+  background-color: ghostwhite;
+  padding: 15px;
+  border-radius: 5%;
+  box-shadow: 0 5px 5px silver;
+  margin: 15px 0;
+  font-weight: 300;
+}
+.content .formbox label {
+  display: block;
+  margin: 5px 0;
+}
+.content .formbox input, .content .formbox textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+}
+.content .formbox #send-btn {
+  padding: 10px;
+  border: 0;
+  background-color: #102372;
+  color: whitesmoke;
+  width: 100%;
+  font-size: 1.1em;
+}
+.content .formbox .block {
+  margin: 10px 0;
+  min-width: 100%;
+  display: block;
+}
+
+footer {
+  clear: both;
+  margin: 30px 0 0;
+  padding: 10px 0;
+  text-align: center;
+}
